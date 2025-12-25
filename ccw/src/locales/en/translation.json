@@ -1,0 +1,27 @@
+{
+  "btn": {
+    "start": "Start",
+    "stop": "Stop",
+    "clear": "Clear"
+  },
+  "otherText": {
+    "speed": "Speed",
+    "NumberOfVerifiedWallets": "Verified Wallets",
+    "text": "Found Wallets",
+    "text2": "Last 20 Results"
+  },
+  "resultConsole": {
+    "text1": "Mnemonic Phrase",
+    "text2": "Address",
+    "text3": "Balance"
+  },
+  "ToolTip":{
+    "start":"This is the start button",
+    "stop":"This is the stop button",
+    "progress":"Progress indicator",
+    "speed":"Slider for changing speed",
+    "language":"Change language",
+    "theme":"Change theme",
+    "clear":"This is the clear button"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "btn": {
+    "start": "Démarrer",
+    "stop": "Arrêter",
+    "clear": "Effacer"
+  },
+  "otherText": {
+    "speed": "Vitesse",
+    "NumberOfVerifiedWallets": "Portefeuilles vérifiés",
+    "text": "Portefeuilles trouvés",
+    "text2": "20 derniers résultats"
+  },
+  "resultConsole": {
+    "text1": "Phrase mnémonique",
+    "text2": "Adresse",
+    "text3": "Solde"
+  },
+  "ToolTip": {
+    "start": "Ceci est le bouton de démarrage",
+    "stop": "Ceci est le bouton d'arrêt",
+    "progress": "Indicateur de progression",
+    "speed": "Curseur pour changer la vitesse",
+    "language": "Changer la langue",
+    "theme": "Changer le thème",
+    "clear": "Ceci est le bouton d'effacement"
+  }
+}

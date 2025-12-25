@@ -1,0 +1,27 @@
+{
+  "btn": {
+    "start": "开始",
+    "stop": "停止",
+    "clear": "清除"
+  },
+  "otherText": {
+    "speed": "速度",
+    "NumberOfVerifiedWallets": "验证的钱包",
+    "text": "找到的钱包",
+    "text2": "最近20个结果"
+  },
+  "resultConsole": {
+    "text1": "助记词",
+    "text2": "地址",
+    "text3": "余额"
+  },
+  "ToolTip": {
+    "start": "这是开始按钮",
+    "stop": "这是停止按钮",
+    "progress": "进度指示器",
+    "speed": "用于改变速度的滑块",
+    "language": "更改语言",
+    "theme": "更改主题",
+    "clear": "这是清除按钮"
+  }
+}

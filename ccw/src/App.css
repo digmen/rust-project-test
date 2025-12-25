@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --white-color: #ffffff;
+    --black-color: #010101;
+    --menu-color: #0F0F0F;
+    --inside-console-color: #1A1A1A;
+    --modal-span-bg: #ffffff;
+    --font-size-desktop: clamp(0.875rem, 0.5rem + 0.75vw, 1.25rem);
+    /* Размер шрифта резиновый от 12 до 20px */
+    --font-size-console: clamp(0.875rem, 0.75rem + 0.25vw, 1rem);
+}
+
+[data-theme="light"] {
+    --black-color: #ffffff;
+    --white-color: #000000;
+    --menu-color: #E6E6E6;
+    --inside-console-color: #E4E4E4;
+    --modal-span-bg: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    transition: 0.4s ease-in-out;
+}
+
+body {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+li,
+ol,
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+span {
+    cursor: default;
+}
+
+::selection {
+    background-color: transparent;
+}
+
+.hero {
+    display: flex;
+    gap: 5px;
+    height: 100vh;
+    padding: 5px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--menu-color);
+    height: calc(100vh - 10px);
+    width: clamp(25vw, 30vw, 30vw);
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.btn_start_stop {
+    display: flex;
+    gap: 4px;
+}
+
+.btn_start_stop button {
+    border: 1px solid #424242;
+    color: var(--white-color);
+    background-color: transparent;
+    width: 100%;
+    border-radius: 6px;
+    height: 6vh;
+    font-size: clamp(16px, 2vw, 24px);
+}
+
+.btn_start_stop button:active {
+    background-color: var(--white-color);
+    color: var(--menu-color);
+    transition: 0.1s;
+}
+
+.number_of_verified_wallets_block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.number_of_verified_wallets_block_up {
+    display: flex;
+    align-items: center;
+    padding-top: 13px;
+    gap: 5px;
+}
+
+.number_of_verified_wallets_block_up svg {
+    width: clamp(1.25rem, 1rem + 0.5vw, 1.5rem);
+    height: auto;
+}
+
+.number_of_verified_wallets_block_up path {
+    fill: var(--white-color);
+}
+
+.number_of_verified_wallets_block_up span {
+    font-size: var(--font-size-desktop);
+    color: var(--white-color);
+}
+
+.number_of_verified_wallets_block_down {
+    display: flex;
+}
+
+.progress_bar {
+    height: 2vh;
+    background-color: #1FD36F;
+    border-radius: 1px;
+    width: 0%;
+}
+
+.progress_bar2 {
+    height: 2vh;
+    background-color: white;
+    border-radius: 1px;
+    width: 100%;
+}
+
+.slidecontainer {
+    height: 2vh;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2vh;
+    background: #434343;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.5vw;
+    height: 2vh;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 1vw;
+    height: 1.5vh;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.menu_down {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu_down svg {
+    width: clamp(1.625rem, 1.125rem + 1vw, 2.125rem);
+    height: auto;
+    cursor: pointer;
+}
+
+.language {
+    fill: var(--white-color);
+}
+
+.theme {
+    stroke: var(--white-color);
+    transition: 1s;
+}
+
+.console {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    width: 85vw;
+    background-color: var(--menu-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.crypto_found_block {
+    background-color: var(--black-color);
+    border-radius: 15px;
+}
+
+.crypto_found_block_in {
+    border-radius: 10px;
+    width: calc(100% - 10px);
+    height: 36vh;
+    background-color: var(--inside-console-color);
+    margin: 0px 5px 5px 5px;
+}
+
+.crypto_found_block_title {
+    padding: 6px 12px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.crypto_found_block_title span,
+.result_checked_wallets_title span {
+    font-size: var(--font-size-desktop);
+    color: var(--white-color);
+}
+
+.crypto_found_block_title svg {
+    width: clamp(1.125rem, 0.75rem + 0.75vw, 1.5rem);
+    height: auto;
+}
+
+.crypto_found_block_title path {
+    fill: var(--white-color);
+}
+
+.result_checked_wallets {
+    background-color: var(--black-color);
+    border-radius: 15px;
+    height: 50vh;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex: 1 auto;
+}
+
+.checked_wallets_list {
+    width: calc(100% - 10px);
+    flex: 1 auto;
+    overflow-y: auto;
+    background-color: var(--inside-console-color);
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    margin: 0px 5px 5px 5px;
+}
+
+.checked_wallets_list::-webkit-scrollbar {
+    width: clamp(0vw, 0.5vw, 3vw);
+}
+
+.checked_wallets_list::-webkit-scrollbar-track {
+    background: #2a2a2a;
+    border-radius: 10px;
+}
+
+.checked_wallets_list::-webkit-scrollbar-thumb {
+    background-color: #5a5a5a;
+    border-radius: 10px;
+}
+
+.checked_wallets_list::-webkit-scrollbar-thumb:hover {
+    background-color: #787878;
+}
+
+.result_checked_wallets_title {
+    padding: 6px 12px 6px 12px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.result_checked_wallets_title button {
+    font-size: var(--font-size-desktop);
+    color: var(--white-color);
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid var(--inside-console-color);
+    padding-inline: 10px;
+}
+
+.checked_wallets_list_text,
+.checked_wallets_list_text p {
+    font-size: var(--font-size-console);
+    color: var(--white-color);
+}
+
+/* Модальное окно для смены языка */
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #424242;
+    padding: 2px;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+.modal_text {
+    background-color: var(--inside-console-color);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.modal_text span {
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.modal_text span:hover {
+    background-color: var(--modal-span-bg);
+    color: var(--black-color);
+}

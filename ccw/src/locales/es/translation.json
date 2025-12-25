@@ -1,0 +1,27 @@
+{
+  "btn": {
+    "start": "Comenzar",
+    "stop": "Detener",
+    "clear": "Limpiar"
+  },
+  "otherText": {
+    "speed": "Velocidad",
+    "NumberOfVerifiedWallets": "Carteras verificadas",
+    "text": "Carteras encontradas",
+    "text2": "Últimos 20 resultados"
+  },
+  "resultConsole": {
+    "text1": "Frase mnemotécnica",
+    "text2": "Dirección",
+    "text3": "Saldo"
+  },
+  "ToolTip": {
+    "start": "Este es el botón de comenzar",
+    "stop": "Este es el botón de detener",
+    "progress": "Indicador de progreso",
+    "speed": "Deslizador para cambiar la velocidad",
+    "language": "Cambiar idioma",
+    "theme": "Cambiar tema",
+    "clear": "Este es el botón de limpiar"
+  }
+}
